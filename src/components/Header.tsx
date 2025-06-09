@@ -22,6 +22,9 @@ const Header = () => {
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
+            <a href="#noticias" className="text-aefem-purple hover:text-aefem-pink transition-colors font-medium">
+              Notícias
+            </a>
             <a href="#sobre" className="text-aefem-purple hover:text-aefem-pink transition-colors font-medium">
               Sobre Nós
             </a>
@@ -55,6 +58,9 @@ const Header = () => {
         {isMenuOpen && (
           <div className="md:hidden py-4 border-t border-gray-200">
             <nav className="flex flex-col space-y-4">
+              <a href="#noticias" className="text-aefem-purple hover:text-aefem-pink transition-colors font-medium">
+                Notícias
+              </a>
               <a href="#sobre" className="text-aefem-purple hover:text-aefem-pink transition-colors font-medium">
                 Sobre Nós
               </a>
