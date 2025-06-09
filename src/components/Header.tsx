@@ -2,6 +2,7 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
+import LanguageSelector from "./LanguageSelector";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -40,18 +41,22 @@ const Header = () => {
             <a href="#contacto" className="text-aefem-purple hover:text-aefem-pink transition-colors font-medium">
               Contacto
             </a>
+            <LanguageSelector />
             <Button className="bg-aefem-pink hover:bg-aefem-purple text-white rounded-full px-6">
               Apoiar
             </Button>
           </nav>
 
           {/* Mobile menu button */}
-          <button
-            className="md:hidden p-2 text-aefem-purple"
-            onClick={() => setIsMenuOpen(!isMenuOpen)}
-          >
-            {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
-          </button>
+          <div className="md:hidden flex items-center space-x-2">
+            <LanguageSelector />
+            <button
+              className="p-2 text-aefem-purple"
+              onClick={() => setIsMenuOpen(!isMenuOpen)}
+            >
+              {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+            </button>
+          </div>
         </div>
 
         {/* Mobile Navigation */}
