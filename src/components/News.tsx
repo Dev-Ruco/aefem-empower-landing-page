@@ -1,4 +1,3 @@
-
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Calendar, ArrowRight } from "lucide-react";
@@ -9,14 +8,14 @@ const News = () => {
       id: 1,
       title: "Liloca leva bolsas de formação e apoio solidário a mulheres com VIH em Malhazine",
       excerpt: "A Associação de Empoderamento Feminino (AEFEM), liderada pela artista e activista Liloca (Luísa Zélia), realizou no domingo, 8 de Junho, uma visita solidária à Associação Hixikanwe, no bairro de Malhazine, em Maputo.",
-      image: "/lovable-uploads/11d0bacb-e9fb-4482-8903-9a96eb8f67ae.png",
+      image: "/lovable-uploads/e406f682-b0fc-48e7-8ea1-b1a8a55b560a.png",
       date: "8 de Junho, 2024"
     },
     {
       id: 2,
       title: "AEFEM lança programa de mentoria para jovens mulheres empreendedoras",
       excerpt: "Novo programa visa capacitar jovens mulheres com ferramentas práticas para o desenvolvimento de negócios sustentáveis, promovendo a independência económica através do empreendedorismo.",
-      image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      image: "/lovable-uploads/11d0bacb-e9fb-4482-8903-9a96eb8f67ae.png",
       date: "15 de Maio, 2024"
     },
     {
