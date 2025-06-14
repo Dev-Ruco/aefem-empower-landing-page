@@ -1,8 +1,11 @@
 
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Heart } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
 const Hero = () => {
+  const navigate = useNavigate();
+
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background with overlay */}
@@ -31,6 +34,7 @@ const Hero = () => {
           <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mt-12">
             <Button 
               size="lg" 
+              onClick={() => navigate('/cadastro')}
               className="bg-white text-aefem-purple hover:bg-gray-100 text-xl px-12 py-8 rounded-full font-bold shadow-2xl transform hover:scale-110 transition-all duration-300 border-4 border-white"
             >
               Junta-te ao Movimento
