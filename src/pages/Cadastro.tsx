@@ -6,7 +6,7 @@ import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Heart, Smartphone, Building2, Users, Award, Target, CheckCircle } from "lucide-react";
+import { Heart, Smartphone, Building2, Users, Award, Target, CheckCircle, CreditCard } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { useToast } from "@/hooks/use-toast";
@@ -50,6 +50,36 @@ const Cadastro = () => {
     { icon: Award, title: "Capacitação", desc: "Acesso a workshops e formações exclusivas" },
     { icon: Target, title: "Mentoria", desc: "Orientação personalizada para o seu negócio" },
     { icon: Heart, title: "Impacto Social", desc: "Contribua para a transformação de vidas" }
+  ];
+
+  const paymentMethods = [
+    {
+      id: "mpesa",
+      name: "M-Pesa",
+      icon: Smartphone,
+      color: "text-green-600",
+      bgColor: "bg-green-50",
+      borderColor: "border-green-200",
+      description: "Vodacom M-Pesa"
+    },
+    {
+      id: "mmola",
+      name: "M-Mola",
+      icon: Smartphone,
+      color: "text-blue-600",
+      bgColor: "bg-blue-50",
+      borderColor: "border-blue-200",
+      description: "mCel M-Mola"
+    },
+    {
+      id: "banco",
+      name: "Transferência Bancária",
+      icon: Building2,
+      color: "text-purple-600",
+      bgColor: "bg-purple-50",
+      borderColor: "border-purple-200",
+      description: "Banco Capricórnio"
+    }
   ];
 
   return (
@@ -129,12 +159,11 @@ const Cadastro = () => {
           </div>
         </section>
 
-        {/* Payment Info Section */}
+        {/* Quota Info Section */}
         <section className="py-16 bg-gradient-to-r from-gray-50 to-white">
-          <div className="container mx-auto px-4 max-w-6xl">
-            <div className="grid lg:grid-cols-3 gap-8">
-              {/* Quota Info */}
-              <Card className="lg:col-span-1 bg-gradient-to-br from-aefem-purple to-purple-600 text-white border-0">
+          <div className="container mx-auto px-4 max-w-4xl">
+            <div className="text-center">
+              <Card className="bg-gradient-to-br from-aefem-purple to-purple-600 text-white border-0 max-w-lg mx-auto">
                 <CardHeader className="text-center">
                   <CardTitle className="text-2xl text-white">Quota Anual</CardTitle>
                   <CardDescription className="text-purple-100">
@@ -151,36 +180,6 @@ const Cadastro = () => {
                   </div>
                 </CardContent>
               </Card>
-              
-              {/* Payment Options */}
-              <div className="lg:col-span-2">
-                <h3 className="text-2xl font-bold text-aefem-purple mb-6">Opções de Pagamento</h3>
-                <div className="grid md:grid-cols-3 gap-4">
-                  <Card className="hover:shadow-lg transition-all duration-300 hover:scale-105">
-                    <CardContent className="p-6 text-center">
-                      <Smartphone className="w-12 h-12 mx-auto mb-4 text-green-600" />
-                      <h4 className="font-semibold text-aefem-purple mb-2">M-Pesa</h4>
-                      <p className="text-gray-600 text-sm">Pagamento via carteira móvel M-Pesa</p>
-                    </CardContent>
-                  </Card>
-                  
-                  <Card className="hover:shadow-lg transition-all duration-300 hover:scale-105">
-                    <CardContent className="p-6 text-center">
-                      <Smartphone className="w-12 h-12 mx-auto mb-4 text-blue-600" />
-                      <h4 className="font-semibold text-aefem-purple mb-2">M-Mola</h4>
-                      <p className="text-gray-600 text-sm">Pagamento via carteira móvel M-Mola</p>
-                    </CardContent>
-                  </Card>
-                  
-                  <Card className="hover:shadow-lg transition-all duration-300 hover:scale-105">
-                    <CardContent className="p-6 text-center">
-                      <Building2 className="w-12 h-12 mx-auto mb-4 text-purple-600" />
-                      <h4 className="font-semibold text-aefem-purple mb-2">Banco Capricórnio</h4>
-                      <p className="text-gray-600 text-sm">Transferência bancária</p>
-                    </CardContent>
-                  </Card>
-                </div>
-              </div>
             </div>
           </div>
         </section>
@@ -354,32 +353,51 @@ const Cadastro = () => {
                     </div>
                   </div>
 
-                  {/* Payment Method */}
+                  {/* Payment Method - Modernized */}
                   <div>
-                    <h3 className="text-xl font-semibold text-aefem-purple mb-6 border-b border-aefem-pink/20 pb-2">
+                    <h3 className="text-xl font-semibold text-aefem-purple mb-6 border-b border-aefem-pink/20 pb-2 flex items-center">
+                      <CreditCard className="w-5 h-5 mr-2" />
                       Método de Pagamento
                     </h3>
-                    <Label className="text-aefem-purple font-medium">Método de Pagamento Preferido *</Label>
+                    <p className="text-gray-600 mb-6">Selecione como prefere pagar a sua quota anual de 500 MT</p>
+                    
                     <RadioGroup
                       value={formData.metodoPagamento}
                       onValueChange={(value) => setFormData(prev => ({ ...prev, metodoPagamento: value }))}
-                      className="mt-4 space-y-4"
+                      className="grid md:grid-cols-3 gap-4"
                     >
-                      <div className="flex items-center space-x-3 p-4 border rounded-lg hover:bg-gray-50 transition-colors">
-                        <RadioGroupItem value="mpesa" id="mpesa" className="border-aefem-purple text-aefem-pink" />
-                        <Smartphone className="w-5 h-5 text-green-600" />
-                        <Label htmlFor="mpesa" className="text-gray-700 font-medium cursor-pointer">M-Pesa</Label>
-                      </div>
-                      <div className="flex items-center space-x-3 p-4 border rounded-lg hover:bg-gray-50 transition-colors">
-                        <RadioGroupItem value="mmola" id="mmola" className="border-aefem-purple text-aefem-pink" />
-                        <Smartphone className="w-5 h-5 text-blue-600" />
-                        <Label htmlFor="mmola" className="text-gray-700 font-medium cursor-pointer">M-Mola</Label>
-                      </div>
-                      <div className="flex items-center space-x-3 p-4 border rounded-lg hover:bg-gray-50 transition-colors">
-                        <RadioGroupItem value="banco" id="banco" className="border-aefem-purple text-aefem-pink" />
-                        <Building2 className="w-5 h-5 text-purple-600" />
-                        <Label htmlFor="banco" className="text-gray-700 font-medium cursor-pointer">Banco Capricórnio</Label>
-                      </div>
+                      {paymentMethods.map((method) => (
+                        <div key={method.id} className="relative">
+                          <RadioGroupItem 
+                            value={method.id} 
+                            id={method.id} 
+                            className="absolute top-4 left-4 border-aefem-purple text-aefem-pink" 
+                          />
+                          <Label 
+                            htmlFor={method.id} 
+                            className={`block cursor-pointer rounded-xl border-2 p-6 pl-12 transition-all duration-200 hover:shadow-md ${
+                              formData.metodoPagamento === method.id 
+                                ? `${method.borderColor} ${method.bgColor} shadow-lg transform scale-105` 
+                                : 'border-gray-200 bg-white hover:border-gray-300'
+                            }`}
+                          >
+                            <div className="flex items-start space-x-3">
+                              <method.icon className={`w-8 h-8 mt-1 ${method.color}`} />
+                              <div className="flex-1">
+                                <h4 className="font-semibold text-gray-900 mb-1">{method.name}</h4>
+                                <p className="text-sm text-gray-600">{method.description}</p>
+                                {formData.metodoPagamento === method.id && (
+                                  <div className="mt-3 p-3 bg-white/80 rounded-lg">
+                                    <p className="text-xs text-gray-700">
+                                      Receberá as instruções de pagamento por email
+                                    </p>
+                                  </div>
+                                )}
+                              </div>
+                            </div>
+                          </Label>
+                        </div>
+                      ))}
                     </RadioGroup>
                   </div>
 
