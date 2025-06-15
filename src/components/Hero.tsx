@@ -7,7 +7,7 @@ const Hero = () => {
   const navigate = useNavigate();
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-black">
+    <section className="relative h-[90vh] flex items-center justify-center overflow-hidden bg-black">
       {/* Background with opacity */}
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-40"
@@ -49,11 +49,6 @@ const Hero = () => {
             </Button>
           </div>
         </div>
-      </div>
-      
-      {/* Scroll indicator */}
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-        <div className="w-1 h-16 bg-white/60 rounded-full"></div>
       </div>
     </section>
   );
