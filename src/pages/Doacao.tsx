@@ -75,7 +75,7 @@ const Doacao = () => {
         <section 
           className="relative text-white py-24 overflow-hidden bg-cover bg-center"
           style={{
-            backgroundImage: `linear-gradient(rgba(236, 72, 153, 0.8), rgba(139, 69, 162, 0.8)), url('/lovable-uploads/aedb52ae-f798-49c8-a5f5-ca3634f5bc61.png')`
+            backgroundImage: `linear-gradient(rgba(236, 72, 153, 0.8), rgba(139, 69, 162, 0.8)), url('/lovable-uploads/c9893533-76dd-419a-9156-239ff67b6da6.png')`
           }}
         >
           <div className="container mx-auto px-4 relative z-10">
