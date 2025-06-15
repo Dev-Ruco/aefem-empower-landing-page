@@ -1,4 +1,3 @@
-
 import { Users, Heart, Target, Lightbulb, Scale, Shield, MessageCircle, Network, HandHeart, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
@@ -88,13 +87,20 @@ const About = () => {
             Pilares Estratégicos
           </h3>
           
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
             <div className="bg-white p-8 rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition-shadow">
-              <div className="flex items-center mb-6">
-                <div className="w-12 h-12 bg-gradient-to-br from-aefem-pink to-aefem-purple rounded-xl flex items-center justify-center mr-4">
-                  <Users className="w-6 h-6 text-white" />
+              <div className="mb-6">
+                <img 
+                  src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=400&h=200&fit=crop"
+                  alt="Capacitação e Liderança Feminina"
+                  className="w-full h-40 object-cover rounded-xl mb-4"
+                />
+                <div className="flex items-center">
+                  <div className="w-12 h-12 bg-gradient-to-br from-aefem-pink to-aefem-purple rounded-xl flex items-center justify-center mr-4">
+                    <Users className="w-6 h-6 text-white" />
+                  </div>
+                  <h4 className="text-lg font-bold text-aefem-purple">Capacitação e Liderança Feminina</h4>
                 </div>
-                <h4 className="text-lg font-bold text-aefem-purple">Capacitação e Liderança Feminina</h4>
               </div>
               <p className="text-gray-600 leading-relaxed">
                 Desenvolvimento de programas de formação, empreendedorismo e liderança comunitária, visando dotar 
@@ -103,11 +109,18 @@ const About = () => {
             </div>
 
             <div className="bg-white p-8 rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition-shadow">
-              <div className="flex items-center mb-6">
-                <div className="w-12 h-12 bg-gradient-to-br from-aefem-pink to-aefem-purple rounded-xl flex items-center justify-center mr-4">
-                  <Scale className="w-6 h-6 text-white" />
+              <div className="mb-6">
+                <img 
+                  src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=400&h=200&fit=crop"
+                  alt="Advocacia e Defesa de Direitos"
+                  className="w-full h-40 object-cover rounded-xl mb-4"
+                />
+                <div className="flex items-center">
+                  <div className="w-12 h-12 bg-gradient-to-br from-aefem-pink to-aefem-purple rounded-xl flex items-center justify-center mr-4">
+                    <Scale className="w-6 h-6 text-white" />
+                  </div>
+                  <h4 className="text-lg font-bold text-aefem-purple">Advocacia e Defesa de Direitos</h4>
                 </div>
-                <h4 className="text-lg font-bold text-aefem-purple">Advocacia e Defesa de Direitos</h4>
               </div>
               <p className="text-gray-600 leading-relaxed">
                 Promoção e defesa activa dos direitos das mulheres e raparigas, com enfoque no combate 
@@ -116,11 +129,18 @@ const About = () => {
             </div>
 
             <div className="bg-white p-8 rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition-shadow">
-              <div className="flex items-center mb-6">
-                <div className="w-12 h-12 bg-gradient-to-br from-aefem-pink to-aefem-purple rounded-xl flex items-center justify-center mr-4">
-                  <MessageCircle className="w-6 h-6 text-white" />
+              <div className="mb-6">
+                <img 
+                  src="https://images.unsplash.com/photo-1501854140801-50d01698950b?w=400&h=200&fit=crop"
+                  alt="Sensibilização e Mobilização Social"
+                  className="w-full h-40 object-cover rounded-xl mb-4"
+                />
+                <div className="flex items-center">
+                  <div className="w-12 h-12 bg-gradient-to-br from-aefem-pink to-aefem-purple rounded-xl flex items-center justify-center mr-4">
+                    <MessageCircle className="w-6 h-6 text-white" />
+                  </div>
+                  <h4 className="text-lg font-bold text-aefem-purple">Sensibilização e Mobilização Social</h4>
                 </div>
-                <h4 className="text-lg font-bold text-aefem-purple">Sensibilização e Mobilização Social</h4>
               </div>
               <p className="text-gray-600 leading-relaxed">
                 Implementação de campanhas de sensibilização e educação para a cidadania, estimulando o debate 
@@ -129,11 +149,18 @@ const About = () => {
             </div>
 
             <div className="bg-white p-8 rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition-shadow">
-              <div className="flex items-center mb-6">
-                <div className="w-12 h-12 bg-gradient-to-br from-aefem-pink to-aefem-purple rounded-xl flex items-center justify-center mr-4">
-                  <Network className="w-6 h-6 text-white" />
+              <div className="mb-6">
+                <img 
+                  src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=400&h=200&fit=crop"
+                  alt="Redes e Parcerias Estratégicas"
+                  className="w-full h-40 object-cover rounded-xl mb-4"
+                />
+                <div className="flex items-center">
+                  <div className="w-12 h-12 bg-gradient-to-br from-aefem-pink to-aefem-purple rounded-xl flex items-center justify-center mr-4">
+                    <Network className="w-6 h-6 text-white" />
+                  </div>
+                  <h4 className="text-lg font-bold text-aefem-purple">Redes e Parcerias Estratégicas</h4>
                 </div>
-                <h4 className="text-lg font-bold text-aefem-purple">Redes e Parcerias Estratégicas</h4>
               </div>
               <p className="text-gray-600 leading-relaxed">
                 Facilitação de espaços de diálogo, intercâmbio de experiências e construção de alianças entre 
@@ -142,11 +169,18 @@ const About = () => {
             </div>
 
             <div className="bg-white p-8 rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition-shadow md:col-span-2 lg:col-span-1">
-              <div className="flex items-center mb-6">
-                <div className="w-12 h-12 bg-gradient-to-br from-aefem-pink to-aefem-purple rounded-xl flex items-center justify-center mr-4">
-                  <HandHeart className="w-6 h-6 text-white" />
+              <div className="mb-6">
+                <img 
+                  src="https://images.unsplash.com/photo-1465146344425-f00d5f5c8f07?w=400&h=200&fit=crop"
+                  alt="Assistência e Aconselhamento"
+                  className="w-full h-40 object-cover rounded-xl mb-4"
+                />
+                <div className="flex items-center">
+                  <div className="w-12 h-12 bg-gradient-to-br from-aefem-pink to-aefem-purple rounded-xl flex items-center justify-center mr-4">
+                    <HandHeart className="w-6 h-6 text-white" />
+                  </div>
+                  <h4 className="text-lg font-bold text-aefem-purple">Assistência e Aconselhamento</h4>
                 </div>
-                <h4 className="text-lg font-bold text-aefem-purple">Assistência e Aconselhamento</h4>
               </div>
               <p className="text-gray-600 leading-relaxed">
                 Prestação de apoio psicossocial, jurídico e social a vítimas de violações de direitos humanos, 
@@ -154,22 +188,13 @@ const About = () => {
               </p>
             </div>
           </div>
-        </div>
 
-        {/* Junte-se a Nós */}
-        <div className="mb-16">
-          <div className="bg-gradient-to-r from-aefem-purple to-aefem-pink text-white p-12 rounded-3xl text-center">
-            <h3 className="text-2xl md:text-3xl font-bold mb-6">
-              Junte-se ao Movimento AEFEM
-            </h3>
-            <p className="text-lg mb-8 opacity-90 max-w-3xl mx-auto">
-              Faça parte da transformação da vida de mulheres moçambicanas. Juntos podemos criar 
-              um futuro mais justo e igualitário para todas.
-            </p>
+          {/* Botão Junte-se a Nós */}
+          <div className="text-center">
             <Link to="/cadastro">
               <Button 
                 size="lg" 
-                className="bg-white text-aefem-purple hover:bg-gray-100 font-bold text-lg px-8 py-4 rounded-2xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300"
+                className="bg-aefem-pink hover:bg-pink-600 text-white font-bold text-lg px-8 py-4 rounded-2xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300"
               >
                 Junte-se a Nós
                 <ArrowRight className="w-5 h-5 ml-2" />
