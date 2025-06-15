@@ -90,11 +90,6 @@ const About = () => {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
             <div className="bg-white p-8 rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition-shadow">
               <div className="mb-6">
-                <img 
-                  src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=400&h=200&fit=crop"
-                  alt="Capacitação e Liderança Feminina"
-                  className="w-full h-40 object-cover rounded-xl mb-4"
-                />
                 <div className="flex items-center">
                   <div className="w-12 h-12 bg-gradient-to-br from-aefem-pink to-aefem-purple rounded-xl flex items-center justify-center mr-4">
                     <Users className="w-6 h-6 text-white" />
@@ -110,11 +105,6 @@ const About = () => {
 
             <div className="bg-white p-8 rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition-shadow">
               <div className="mb-6">
-                <img 
-                  src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=400&h=200&fit=crop"
-                  alt="Advocacia e Defesa de Direitos"
-                  className="w-full h-40 object-cover rounded-xl mb-4"
-                />
                 <div className="flex items-center">
                   <div className="w-12 h-12 bg-gradient-to-br from-aefem-pink to-aefem-purple rounded-xl flex items-center justify-center mr-4">
                     <Scale className="w-6 h-6 text-white" />
@@ -130,11 +120,6 @@ const About = () => {
 
             <div className="bg-white p-8 rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition-shadow">
               <div className="mb-6">
-                <img 
-                  src="https://images.unsplash.com/photo-1501854140801-50d01698950b?w=400&h=200&fit=crop"
-                  alt="Sensibilização e Mobilização Social"
-                  className="w-full h-40 object-cover rounded-xl mb-4"
-                />
                 <div className="flex items-center">
                   <div className="w-12 h-12 bg-gradient-to-br from-aefem-pink to-aefem-purple rounded-xl flex items-center justify-center mr-4">
                     <MessageCircle className="w-6 h-6 text-white" />
@@ -150,11 +135,6 @@ const About = () => {
 
             <div className="bg-white p-8 rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition-shadow">
               <div className="mb-6">
-                <img 
-                  src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=400&h=200&fit=crop"
-                  alt="Redes e Parcerias Estratégicas"
-                  className="w-full h-40 object-cover rounded-xl mb-4"
-                />
                 <div className="flex items-center">
                   <div className="w-12 h-12 bg-gradient-to-br from-aefem-pink to-aefem-purple rounded-xl flex items-center justify-center mr-4">
                     <Network className="w-6 h-6 text-white" />
@@ -170,11 +150,6 @@ const About = () => {
 
             <div className="bg-white p-8 rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition-shadow md:col-span-2 lg:col-span-1">
               <div className="mb-6">
-                <img 
-                  src="https://images.unsplash.com/photo-1465146344425-f00d5f5c8f07?w=400&h=200&fit=crop"
-                  alt="Assistência e Aconselhamento"
-                  className="w-full h-40 object-cover rounded-xl mb-4"
-                />
                 <div className="flex items-center">
                   <div className="w-12 h-12 bg-gradient-to-br from-aefem-pink to-aefem-purple rounded-xl flex items-center justify-center mr-4">
                     <HandHeart className="w-6 h-6 text-white" />
