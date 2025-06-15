@@ -9,6 +9,8 @@ import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { ArrowLeft, Heart, Users, Target, Shield, GraduationCap } from "lucide-react";
 import { Link } from "react-router-dom";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
 const Doacao = () => {
   const [currentStep, setCurrentStep] = useState(1);
@@ -43,11 +45,13 @@ const Doacao = () => {
 
   return (
     <div className="min-h-screen bg-gray-50">
+      <Header />
+      
       {/* Hero Section */}
       <div 
-        className="relative bg-cover bg-center py-20"
+        className="relative bg-cover bg-center py-20 pt-32"
         style={{
-          backgroundImage: "linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('/lovable-uploads/aa4a161f-75e7-417d-9a6d-3209a0d95e47.png')"
+          backgroundImage: "linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('/lovable-uploads/bc34786a-f39f-4a6c-9d14-b151ae018d1f.png')"
         }}
       >
         <div className="container mx-auto px-4">
@@ -391,6 +395,8 @@ const Doacao = () => {
           </div>
         </div>
       </div>
+      
+      <Footer />
     </div>
   );
 };

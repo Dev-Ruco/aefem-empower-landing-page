@@ -2,6 +2,7 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -31,9 +32,11 @@ const Header = () => {
             <a href="#publicacoes" className="text-aefem-purple hover:text-aefem-pink transition-colors font-medium">
               Publicações
             </a>
-            <Button className="bg-aefem-pink hover:bg-aefem-purple text-white rounded-full px-6">
-              Apoiar
-            </Button>
+            <Link to="/doacao">
+              <Button className="bg-aefem-pink hover:bg-aefem-purple text-white rounded-full px-6">
+                Apoiar
+              </Button>
+            </Link>
           </nav>
 
           {/* Mobile menu button */}
@@ -58,9 +61,11 @@ const Header = () => {
               <a href="#publicacoes" className="text-aefem-purple hover:text-aefem-pink transition-colors font-medium">
                 Publicações
               </a>
-              <Button className="bg-aefem-pink hover:bg-aefem-purple text-white rounded-full px-6 w-fit">
-                Apoiar
-              </Button>
+              <Link to="/doacao">
+                <Button className="bg-aefem-pink hover:bg-aefem-purple text-white rounded-full px-6 w-fit">
+                  Apoiar
+                </Button>
+              </Link>
             </nav>
           </div>
         )}
