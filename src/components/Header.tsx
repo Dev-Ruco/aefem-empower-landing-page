@@ -22,23 +22,14 @@ const Header = () => {
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
-            <a href="#noticias" className="text-aefem-purple hover:text-aefem-pink transition-colors font-medium">
-              Notícias
-            </a>
             <a href="#sobre" className="text-aefem-purple hover:text-aefem-pink transition-colors font-medium">
               Sobre Nós
             </a>
             <a href="#programas" className="text-aefem-purple hover:text-aefem-pink transition-colors font-medium">
               Programas
             </a>
-            <a href="#testemunhos" className="text-aefem-purple hover:text-aefem-pink transition-colors font-medium">
-              Testemunhos
-            </a>
-            <a href="#equipa" className="text-aefem-purple hover:text-aefem-pink transition-colors font-medium">
-              Equipa
-            </a>
-            <a href="#contacto" className="text-aefem-purple hover:text-aefem-pink transition-colors font-medium">
-              Contacto
+            <a href="#publicacoes" className="text-aefem-purple hover:text-aefem-pink transition-colors font-medium">
+              Publicações
             </a>
             <Button className="bg-aefem-pink hover:bg-aefem-purple text-white rounded-full px-6">
               Apoiar
@@ -58,23 +49,14 @@ const Header = () => {
         {isMenuOpen && (
           <div className="md:hidden py-4 border-t border-gray-200">
             <nav className="flex flex-col space-y-4">
-              <a href="#noticias" className="text-aefem-purple hover:text-aefem-pink transition-colors font-medium">
-                Notícias
-              </a>
               <a href="#sobre" className="text-aefem-purple hover:text-aefem-pink transition-colors font-medium">
                 Sobre Nós
               </a>
               <a href="#programas" className="text-aefem-purple hover:text-aefem-pink transition-colors font-medium">
                 Programas
               </a>
-              <a href="#testemunhos" className="text-aefem-purple hover:text-aefem-pink transition-colors font-medium">
-                Testemunhos
-              </a>
-              <a href="#equipa" className="text-aefem-purple hover:text-aefem-pink transition-colors font-medium">
-                Equipa
-              </a>
-              <a href="#contacto" className="text-aefem-purple hover:text-aefem-pink transition-colors font-medium">
-                Contacto
+              <a href="#publicacoes" className="text-aefem-purple hover:text-aefem-pink transition-colors font-medium">
+                Publicações
               </a>
               <Button className="bg-aefem-pink hover:bg-aefem-purple text-white rounded-full px-6 w-fit">
                 Apoiar
