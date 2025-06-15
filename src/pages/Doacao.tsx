@@ -7,7 +7,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { ArrowLeft, Heart, Users, Target, Shield, GraduationCap } from "lucide-react";
+import { ArrowLeft, Heart, Users, Target, Shield, GraduationCap, BookOpen, Lightbulb, Handshake, TrendingUp } from "lucide-react";
 import { Link } from "react-router-dom";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -78,69 +78,71 @@ const Doacao = () => {
             </h2>
             
             <div className="space-y-6">
-              <Card className="border-l-4 border-l-aefem-pink">
+              <Card className="border-l-4 border-l-aefem-pink hover:shadow-lg transition-shadow">
                 <CardContent className="p-6">
                   <div className="flex items-start space-x-4">
-                    <div className="w-12 h-12 bg-gradient-to-br from-aefem-pink to-aefem-purple rounded-lg flex items-center justify-center flex-shrink-0">
-                      <GraduationCap className="w-6 h-6 text-white" />
+                    <div className="w-16 h-16 bg-gradient-to-br from-aefem-pink to-aefem-purple rounded-xl flex items-center justify-center flex-shrink-0 shadow-lg">
+                      <GraduationCap className="w-8 h-8 text-white" />
                     </div>
                     <div>
-                      <h3 className="font-bold text-aefem-purple mb-2">Capacitação e Educação</h3>
-                      <p className="text-gray-600">Sua contribuição financia programas de formação profissional, workshops de liderança e cursos técnicos que transformam vidas e criam oportunidades económicas sustentáveis para mulheres em situação de vulnerabilidade.</p>
+                      <h3 className="font-bold text-aefem-purple mb-2 text-lg">Capacitação e Educação</h3>
+                      <p className="text-gray-600 leading-relaxed">Sua contribuição financia programas de formação profissional, workshops de liderança e cursos técnicos que transformam vidas e criam oportunidades económicas sustentáveis para mulheres em situação de vulnerabilidade.</p>
                     </div>
                   </div>
                 </CardContent>
               </Card>
 
-              <Card className="border-l-4 border-l-aefem-pink">
+              <Card className="border-l-4 border-l-aefem-pink hover:shadow-lg transition-shadow">
                 <CardContent className="p-6">
                   <div className="flex items-start space-x-4">
-                    <div className="w-12 h-12 bg-gradient-to-br from-aefem-pink to-aefem-purple rounded-lg flex items-center justify-center flex-shrink-0">
-                      <Shield className="w-6 h-6 text-white" />
+                    <div className="w-16 h-16 bg-gradient-to-br from-aefem-pink to-aefem-purple rounded-xl flex items-center justify-center flex-shrink-0 shadow-lg">
+                      <Shield className="w-8 h-8 text-white" />
                     </div>
                     <div>
-                      <h3 className="font-bold text-aefem-purple mb-2">Proteção e Apoio</h3>
-                      <p className="text-gray-600">Cada doação fortalece nossos centros de acolhimento, serviços de aconselhamento psicológico e programas de apoio jurídico para vítimas de violência baseada no género, oferecendo um refúgio seguro e caminhos para a recuperação.</p>
+                      <h3 className="font-bold text-aefem-purple mb-2 text-lg">Proteção e Apoio</h3>
+                      <p className="text-gray-600 leading-relaxed">Cada doação fortalece nossos centros de acolhimento, serviços de aconselhamento psicológico e programas de apoio jurídico para vítimas de violência baseada no género, oferecendo um refúgio seguro e caminhos para a recuperação.</p>
                     </div>
                   </div>
                 </CardContent>
               </Card>
 
-              <Card className="border-l-4 border-l-aefem-pink">
+              <Card className="border-l-4 border-l-aefem-pink hover:shadow-lg transition-shadow">
                 <CardContent className="p-6">
                   <div className="flex items-start space-x-4">
-                    <div className="w-12 h-12 bg-gradient-to-br from-aefem-pink to-aefem-purple rounded-lg flex items-center justify-center flex-shrink-0">
-                      <Users className="w-6 h-6 text-white" />
+                    <div className="w-16 h-16 bg-gradient-to-br from-aefem-pink to-aefem-purple rounded-xl flex items-center justify-center flex-shrink-0 shadow-lg">
+                      <Users className="w-8 h-8 text-white" />
                     </div>
                     <div>
-                      <h3 className="font-bold text-aefem-purple mb-2">Redes Comunitárias</h3>
-                      <p className="text-gray-600">Investimos na criação de redes de apoio mútuo, facilitando o intercâmbio de experiências entre mulheres líderes e promovendo a solidariedade que multiplica o impacto de cada acção individual.</p>
+                      <h3 className="font-bold text-aefem-purple mb-2 text-lg">Redes Comunitárias</h3>
+                      <p className="text-gray-600 leading-relaxed">Investimos na criação de redes de apoio mútuo, facilitando o intercâmbio de experiências entre mulheres líderes e promovendo a solidariedade que multiplica o impacto de cada acção individual.</p>
                     </div>
                   </div>
                 </CardContent>
               </Card>
 
-              <Card className="border-l-4 border-l-aefem-pink">
+              <Card className="border-l-4 border-l-aefem-pink hover:shadow-lg transition-shadow">
                 <CardContent className="p-6">
                   <div className="flex items-start space-x-4">
-                    <div className="w-12 h-12 bg-gradient-to-br from-aefem-pink to-aefem-purple rounded-lg flex items-center justify-center flex-shrink-0">
-                      <Target className="w-6 h-6 text-white" />
+                    <div className="w-16 h-16 bg-gradient-to-br from-aefem-pink to-aefem-purple rounded-xl flex items-center justify-center flex-shrink-0 shadow-lg">
+                      <TrendingUp className="w-8 h-8 text-white" />
                     </div>
                     <div>
-                      <h3 className="font-bold text-aefem-purple mb-2">Sustentabilidade Económica</h3>
-                      <p className="text-gray-600">Apoiamos iniciativas de microcrédito, cooperativas femininas e programas de empreendedorismo que geram independência financeira, quebrando ciclos de dependência e pobreza nas comunidades rurais e urbanas.</p>
+                      <h3 className="font-bold text-aefem-purple mb-2 text-lg">Sustentabilidade Económica</h3>
+                      <p className="text-gray-600 leading-relaxed">Apoiamos iniciativas de microcrédito, cooperativas femininas e programas de empreendedorismo que geram independência financeira, quebrando ciclos de dependência e pobreza nas comunidades rurais e urbanas.</p>
                     </div>
                   </div>
                 </CardContent>
               </Card>
             </div>
 
-            <div className="mt-8 bg-gradient-to-r from-pink-50 to-purple-50 p-6 rounded-2xl">
+            <div className="mt-8 bg-gradient-to-r from-pink-50 to-purple-50 p-6 rounded-2xl border border-pink-100">
               <div className="flex items-center mb-4">
-                <Heart className="w-8 h-8 text-aefem-pink mr-3" />
+                <div className="w-12 h-12 bg-gradient-to-br from-aefem-pink to-aefem-purple rounded-lg flex items-center justify-center mr-4">
+                  <Heart className="w-6 h-6 text-white" />
+                </div>
                 <h3 className="text-xl font-bold text-aefem-purple">Impacto Direto</h3>
               </div>
-              <p className="text-gray-700">
+              <p className="text-gray-700 leading-relaxed">
                 <strong>100% das doações</strong> são canalizadas diretamente para os nossos programas. 
                 Com transparência total, cada contribuição gera relatórios de impacto que mostram 
                 quantas vidas foram transformadas graças ao seu apoio.
