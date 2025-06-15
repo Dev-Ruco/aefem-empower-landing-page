@@ -1,11 +1,13 @@
 
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 import { useNavigate } from "react-router-dom";
-import { useEffect } from "react";
+import { useEffect, useCallback } from "react";
+import { type CarouselApi } from "@/components/ui/carousel";
 import HeroSlide from "./HeroSlide";
 
 const Hero = () => {
   const navigate = useNavigate();
+  const [api, setApi] = React.useState<CarouselApi>();
 
   const slides = [
     {
@@ -24,41 +26,35 @@ const Hero = () => {
     }
   ];
 
+  useEffect(() => {
+    if (!api) {
+      return;
+    }
+
+    const autoplay = setInterval(() => {
+      api.scrollNext();
+    }, 2000);
+
+    const stopAutoplay = () => {
+      clearInterval(autoplay);
+    };
+
+    api.on("pointerDown", stopAutoplay);
+
+    return () => {
+      clearInterval(autoplay);
+    };
+  }, [api]);
+
   return (
     <section className="relative">
       <Carousel 
         className="w-full"
+        setApi={setApi}
         opts={{
           align: "start",
           loop: true,
         }}
-        plugins={[
-          {
-            name: "autoplay",
-            init: (embla) => {
-              let autoplayTimer: NodeJS.Timeout;
-              
-              const startAutoplay = () => {
-                autoplayTimer = setInterval(() => {
-                  embla.scrollNext();
-                }, 2000);
-              };
-              
-              const stopAutoplay = () => {
-                clearInterval(autoplayTimer);
-              };
-              
-              embla.on("pointerDown", stopAutoplay);
-              embla.on("pointerUp", startAutoplay);
-              
-              startAutoplay();
-              
-              return () => {
-                stopAutoplay();
-              };
-            }
-          }
-        ]}
       >
         <CarouselContent>
           {slides.map((slide) => (
