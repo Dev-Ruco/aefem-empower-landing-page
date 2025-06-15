@@ -111,6 +111,13 @@
   .border-aefem-pink {
     border-color: hsl(var(--aefem-pink));
   }
+
+  .text-shadow {
+    text-shadow: 0 1px 3px rgb(0 0 0 / 0.4);
+  }
+  .text-shadow-md {
+    text-shadow: 0 2px 5px rgb(0 0 0 / 0.5);
+  }
 }
 
 /* Animations */

@@ -1,6 +1,6 @@
 
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Heart } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 
 const Hero = () => {
@@ -9,7 +9,7 @@ const Hero = () => {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background with overlay */}
-      <div className="absolute inset-0 bg-black/40"></div>
+      <div className="absolute inset-0 bg-black/60"></div>
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{
@@ -20,13 +20,13 @@ const Hero = () => {
       {/* Content */}
       <div className="relative z-10 container mx-auto px-4 text-center text-white">
         <div className="animate-fade-in-up max-w-4xl mx-auto">
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-8 leading-tight drop-shadow-2xl">
+          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-8 leading-tight text-shadow-md">
             Empoderar Mulheres,
             <br />
             <span className="text-aefem-pink">Transformar Vidas</span>
           </h1>
           
-          <p className="text-lg md:text-xl mb-12 max-w-3xl mx-auto leading-relaxed drop-shadow-lg font-light opacity-90">
+          <p className="text-lg md:text-xl mb-12 max-w-3xl mx-auto leading-relaxed text-shadow font-light opacity-90">
             Juntas construímos um futuro onde cada mulher moçambicana 
             tem acesso à educação, oportunidades e dignidade.
           </p>
