@@ -1,5 +1,7 @@
 
-import { Users, Heart, Target, Lightbulb, Scale, Shield, MessageCircle, Network, HandHeart } from "lucide-react";
+import { Users, Heart, Target, Lightbulb, Scale, Shield, MessageCircle, Network, HandHeart, ArrowRight } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 
 const About = () => {
   return (
@@ -14,7 +16,9 @@ const About = () => {
           <p className="text-lg text-gray-600 max-w-4xl mx-auto leading-relaxed">
             A Associação do Empoderamento Feminino (AEFEM) é uma organização da sociedade civil, de âmbito nacional, 
             sem fins lucrativos e dotada de personalidade jurídica própria, comprometida com a promoção da igualdade 
-            de género e o fortalecimento do papel das mulheres em Moçambique.
+            de género e o fortalecimento do papel das mulheres em Moçambique. Regemo-nos por princípios de legalidade, 
+            transparência, integridade e boa governação, procurando servir de ponte entre as comunidades, as instituições 
+            e a sociedade em geral, para um desenvolvimento mais justo, inclusivo e sustentável.
           </p>
         </div>
 
@@ -33,18 +37,27 @@ const About = () => {
               <p className="text-base text-gray-700 leading-relaxed">
                 Reconhecida pelo seu percurso artístico marcado por canções que exaltam a força, a dignidade 
                 e a resiliência da mulher moçambicana, Liloca conquistou ao longo dos anos um vasto público, 
-                sobretudo entre mulheres em contextos de maior vulnerabilidade.
+                sobretudo entre mulheres em contextos de maior vulnerabilidade, que se reconhecem e se inspiram 
+                nas suas mensagens.
               </p>
               <p className="text-base text-gray-700 leading-relaxed">
                 Consciente do impacto da sua influência e movida pelo desejo de transformar admiração em 
-                acção concreta, Liloca reuniu um grupo de mulheres de diversas origens para fundar a AEFEM.
+                acção concreta, Liloca reuniu um grupo de mulheres de diversas origens e áreas de actuação 
+                para fundar a AEFEM. Assim, a Associação consolidou-se como um espaço de partilha, solidariedade 
+                e mobilização de recursos, com o propósito de apoiar, capacitar e criar oportunidades reais 
+                para mulheres e raparigas que, por diversos factores, permanecem afastadas de direitos e serviços essenciais.
+              </p>
+              <p className="text-base text-gray-700 leading-relaxed">
+                Desde então, a AEFEM tem expandido a sua actuação, promovendo projectos e programas que visam 
+                a autonomia feminina, a liderança comunitária e a defesa intransigente dos direitos humanos, 
+                sempre fiel ao espírito de união, alegria e esperança que Liloca personifica tanto na música como no activismo.
               </p>
             </div>
             
             <div className="order-first md:order-last">
               <img 
                 src="/lovable-uploads/21931972-f47d-4995-b9d1-f2257ae2fb94.png"
-                alt="Mulheres da AEFEM em actividade comunitária"
+                alt="Liloca - Fundadora da AEFEM"
                 className="w-full h-80 object-cover rounded-2xl shadow-lg"
               />
             </div>
@@ -59,9 +72,12 @@ const About = () => {
           
           <div className="bg-gradient-to-r from-pink-50 to-purple-50 p-8 md:p-12 rounded-3xl">
             <p className="text-lg text-gray-700 leading-relaxed text-center max-w-4xl mx-auto">
-              Promover o empoderamento social, económico e político das mulheres moçambicanas, assegurando 
-              a defesa dos seus direitos fundamentais e contribuindo activamente para a eliminação de todas 
-              as formas de violência e discriminação baseadas no género.
+              A missão da AEFEM é promover o empoderamento social, económico e político das mulheres moçambicanas, 
+              assegurando a defesa dos seus direitos fundamentais e contribuindo activamente para a eliminação de 
+              todas as formas de violência e discriminação baseadas no género. Procuramos, através de programas de 
+              capacitação, liderança comunitária, empreendedorismo, advocacia e apoio psicossocial, reforçar as 
+              capacidades individuais e colectivas das mulheres, fomentando a sua participação efectiva nos processos 
+              de tomada de decisão a nível local e nacional.
             </p>
           </div>
         </div>
@@ -78,11 +94,11 @@ const About = () => {
                 <div className="w-12 h-12 bg-gradient-to-br from-aefem-pink to-aefem-purple rounded-xl flex items-center justify-center mr-4">
                   <Users className="w-6 h-6 text-white" />
                 </div>
-                <h4 className="text-lg font-bold text-aefem-purple">Capacitação e Liderança</h4>
+                <h4 className="text-lg font-bold text-aefem-purple">Capacitação e Liderança Feminina</h4>
               </div>
               <p className="text-gray-600 leading-relaxed">
-                Desenvolvimento de programas de formação, empreendedorismo e liderança comunitária para 
-                capacitar mulheres como agentes de mudança.
+                Desenvolvimento de programas de formação, empreendedorismo e liderança comunitária, visando dotar 
+                as mulheres de competências para actuarem como agentes de mudança nas suas comunidades.
               </p>
             </div>
 
@@ -91,11 +107,11 @@ const About = () => {
                 <div className="w-12 h-12 bg-gradient-to-br from-aefem-pink to-aefem-purple rounded-xl flex items-center justify-center mr-4">
                   <Scale className="w-6 h-6 text-white" />
                 </div>
-                <h4 className="text-lg font-bold text-aefem-purple">Advocacia e Direitos</h4>
+                <h4 className="text-lg font-bold text-aefem-purple">Advocacia e Defesa de Direitos</h4>
               </div>
               <p className="text-gray-600 leading-relaxed">
                 Promoção e defesa activa dos direitos das mulheres e raparigas, com enfoque no combate 
-                à violência baseada no género.
+                à violência baseada no género e outras formas de abuso e discriminação.
               </p>
             </div>
 
@@ -104,11 +120,11 @@ const About = () => {
                 <div className="w-12 h-12 bg-gradient-to-br from-aefem-pink to-aefem-purple rounded-xl flex items-center justify-center mr-4">
                   <MessageCircle className="w-6 h-6 text-white" />
                 </div>
-                <h4 className="text-lg font-bold text-aefem-purple">Sensibilização Social</h4>
+                <h4 className="text-lg font-bold text-aefem-purple">Sensibilização e Mobilização Social</h4>
               </div>
               <p className="text-gray-600 leading-relaxed">
-                Implementação de campanhas de sensibilização e educação para a cidadania, promovendo 
-                o debate sobre igualdade de género.
+                Implementação de campanhas de sensibilização e educação para a cidadania, estimulando o debate 
+                público sobre a igualdade de género e o empoderamento feminino como factores centrais para o desenvolvimento sustentável.
               </p>
             </div>
 
@@ -117,11 +133,11 @@ const About = () => {
                 <div className="w-12 h-12 bg-gradient-to-br from-aefem-pink to-aefem-purple rounded-xl flex items-center justify-center mr-4">
                   <Network className="w-6 h-6 text-white" />
                 </div>
-                <h4 className="text-lg font-bold text-aefem-purple">Redes e Parcerias</h4>
+                <h4 className="text-lg font-bold text-aefem-purple">Redes e Parcerias Estratégicas</h4>
               </div>
               <p className="text-gray-600 leading-relaxed">
-                Facilitação de espaços de diálogo e construção de alianças entre mulheres líderes, 
-                jovens e instituições parceiras.
+                Facilitação de espaços de diálogo, intercâmbio de experiências e construção de alianças entre 
+                mulheres líderes, jovens e instituições parceiras, consolidando uma rede de apoio mútuo e acção coordenada.
               </p>
             </div>
 
@@ -130,13 +146,35 @@ const About = () => {
                 <div className="w-12 h-12 bg-gradient-to-br from-aefem-pink to-aefem-purple rounded-xl flex items-center justify-center mr-4">
                   <HandHeart className="w-6 h-6 text-white" />
                 </div>
-                <h4 className="text-lg font-bold text-aefem-purple">Assistência e Apoio</h4>
+                <h4 className="text-lg font-bold text-aefem-purple">Assistência e Aconselhamento</h4>
               </div>
               <p className="text-gray-600 leading-relaxed">
-                Prestação de apoio psicossocial, jurídico e social a vítimas de violações de direitos 
-                humanos, focando na reabilitação digna.
+                Prestação de apoio psicossocial, jurídico e social a vítimas de violações de direitos humanos, 
+                com enfoque na reabilitação e reinserção digna, em articulação com serviços públicos e organizações afins.
               </p>
             </div>
+          </div>
+        </div>
+
+        {/* Junte-se a Nós */}
+        <div className="mb-16">
+          <div className="bg-gradient-to-r from-aefem-purple to-aefem-pink text-white p-12 rounded-3xl text-center">
+            <h3 className="text-2xl md:text-3xl font-bold mb-6">
+              Junte-se ao Movimento AEFEM
+            </h3>
+            <p className="text-lg mb-8 opacity-90 max-w-3xl mx-auto">
+              Faça parte da transformação da vida de mulheres moçambicanas. Juntos podemos criar 
+              um futuro mais justo e igualitário para todas.
+            </p>
+            <Link to="/cadastro">
+              <Button 
+                size="lg" 
+                className="bg-white text-aefem-purple hover:bg-gray-100 font-bold text-lg px-8 py-4 rounded-2xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300"
+              >
+                Junte-se a Nós
+                <ArrowRight className="w-5 h-5 ml-2" />
+              </Button>
+            </Link>
           </div>
         </div>
 
