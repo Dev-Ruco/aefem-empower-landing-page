@@ -165,8 +165,8 @@ const About = () => {
             </div>
           </div>
 
-          {/* Botão Junte-se a Nós */}
-          <div className="text-center">
+          {/* Botões de Ação */}
+          <div className="text-center space-y-4 sm:space-y-0 sm:space-x-4 sm:flex sm:justify-center">
             <Link to="/cadastro">
               <Button 
                 size="lg" 
@@ -174,6 +174,17 @@ const About = () => {
               >
                 Junte-se a Nós
                 <ArrowRight className="w-5 h-5 ml-2" />
+              </Button>
+            </Link>
+            
+            <Link to="/doacao">
+              <Button 
+                size="lg" 
+                variant="outline"
+                className="border-2 border-aefem-purple text-aefem-purple hover:bg-aefem-purple hover:text-white font-bold text-lg px-8 py-4 rounded-2xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300"
+              >
+                <Heart className="w-5 h-5 mr-2" />
+                Apoiar Causa
               </Button>
             </Link>
           </div>
