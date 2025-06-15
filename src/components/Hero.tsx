@@ -1,6 +1,7 @@
 
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 import { useNavigate } from "react-router-dom";
+import { useEffect } from "react";
 import HeroSlide from "./HeroSlide";
 
 const Hero = () => {
@@ -25,7 +26,40 @@ const Hero = () => {
 
   return (
     <section className="relative">
-      <Carousel className="w-full">
+      <Carousel 
+        className="w-full"
+        opts={{
+          align: "start",
+          loop: true,
+        }}
+        plugins={[
+          {
+            name: "autoplay",
+            init: (embla) => {
+              let autoplayTimer: NodeJS.Timeout;
+              
+              const startAutoplay = () => {
+                autoplayTimer = setInterval(() => {
+                  embla.scrollNext();
+                }, 2000);
+              };
+              
+              const stopAutoplay = () => {
+                clearInterval(autoplayTimer);
+              };
+              
+              embla.on("pointerDown", stopAutoplay);
+              embla.on("pointerUp", startAutoplay);
+              
+              startAutoplay();
+              
+              return () => {
+                stopAutoplay();
+              };
+            }
+          }
+        ]}
+      >
         <CarouselContent>
           {slides.map((slide) => (
             <CarouselItem key={slide.id}>
