@@ -1,55 +1,46 @@
 
-import { Button } from "@/components/ui/button";
-import { ArrowRight } from "lucide-react";
+import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 import { useNavigate } from "react-router-dom";
+import HeroSlide from "./HeroSlide";
 
 const Hero = () => {
   const navigate = useNavigate();
 
+  const slides = [
+    {
+      id: 1,
+      title: "AEFEM Leva Bolsas de formação e Apoio Solidário a Mulheres Com VIH em Maputo",
+      description: "A Associação de Empoderamento Feminino (AEFEM), liderada pela artista e activista Liloca, realizou no domingo, 8 de Junho, uma visita solidária à Associação Hixikanwe, no bairro de Malhazine, em Maputo. A iniciativa teve como objectivo apoiar mulheres em situação de vulnerabilidade, particularmente afectadas pelo VIH, através da entrega de bens alimentares e da atribuição de bolsas de formação profissional.",
+      backgroundImage: "/lovable-uploads/ae3c2206-a4ca-42f9-89ff-82f026afaba4.png",
+      action: () => navigate('/historia-completa')
+    },
+    {
+      id: 2,
+      title: "Empoderar Mulheres, Transformar Vidas",
+      description: "Juntas construímos um futuro onde cada mulher moçambicana tem acesso à educação, oportunidades e dignidade. A nossa missão é formar mil mulheres em três anos e criar duzentos micronegócios sustentáveis.",
+      backgroundImage: "/lovable-uploads/2639acf1-b534-470a-a7b0-bbf8cd0f5c8f.png",
+      action: () => navigate('/cadastro')
+    }
+  ];
+
   return (
-    <section className="relative h-[90vh] flex items-center justify-center overflow-hidden bg-black">
-      {/* Background with opacity */}
-      <div 
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-40"
-        style={{
-          backgroundImage: "url('/lovable-uploads/2639acf1-b534-470a-a7b0-bbf8cd0f5c8f.png')"
-        }}
-      ></div>
-      
-      {/* Content */}
-      <div className="relative z-10 container mx-auto px-4 text-center text-white">
-        <div className="animate-fade-in-up max-w-4xl mx-auto">
-          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-8 leading-tight text-shadow-md">
-            Empoderar Mulheres,
-            <br />
-            <span className="text-aefem-pink">Transformar Vidas</span>
-          </h1>
-          
-          <p className="text-base md:text-lg mb-12 max-w-3xl mx-auto leading-relaxed text-shadow font-light opacity-90">
-            Juntas construímos um futuro onde cada mulher moçambicana 
-            tem acesso à educação, oportunidades e dignidade.
-          </p>
-          
-          <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mt-12">
-            <Button 
-              size="lg" 
-              onClick={() => navigate('/cadastro')}
-              className="bg-aefem-pink hover:bg-aefem-purple text-white text-lg px-10 py-6 rounded-full font-bold shadow-2xl transform hover:scale-105 transition-all duration-300 border-0 min-w-[200px]"
-            >
-              Junta-te a Nós
-              <ArrowRight className="ml-3 w-5 h-5" />
-            </Button>
-            
-            <Button 
-              variant="outline" 
-              size="lg"
-              className="border-2 border-white text-white bg-white/20 hover:bg-white hover:text-aefem-purple text-lg px-10 py-6 rounded-full font-bold shadow-2xl transform hover:scale-105 transition-all duration-300 backdrop-blur-sm min-w-[200px]"
-            >
-              Saber Mais
-            </Button>
-          </div>
-        </div>
-      </div>
+    <section className="relative">
+      <Carousel className="w-full">
+        <CarouselContent>
+          {slides.map((slide) => (
+            <CarouselItem key={slide.id}>
+              <HeroSlide
+                title={slide.title}
+                description={slide.description}
+                backgroundImage={slide.backgroundImage}
+                onLearnMore={slide.action}
+              />
+            </CarouselItem>
+          ))}
+        </CarouselContent>
+        <CarouselPrevious className="left-4" />
+        <CarouselNext className="right-4" />
+      </Carousel>
     </section>
   );
 };
