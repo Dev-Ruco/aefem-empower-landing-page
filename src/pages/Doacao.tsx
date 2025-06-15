@@ -51,7 +51,7 @@ const Doacao = () => {
       <div 
         className="relative bg-cover bg-center py-20 pt-32"
         style={{
-          backgroundImage: "linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('/lovable-uploads/bc34786a-f39f-4a6c-9d14-b151ae018d1f.png')"
+          backgroundImage: "linear-gradient(rgba(236, 72, 153, 0.7), rgba(236, 72, 153, 0.6)), url('/lovable-uploads/aedb52ae-f798-49c8-a5f5-ca3634f5bc61.png')"
         }}
       >
         <div className="container mx-auto px-4">
