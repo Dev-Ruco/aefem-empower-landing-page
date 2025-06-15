@@ -19,13 +19,13 @@ const Hero = () => {
       {/* Content */}
       <div className="relative z-10 container mx-auto px-4 text-center text-white">
         <div className="animate-fade-in-up max-w-4xl mx-auto">
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-8 leading-tight text-shadow-md">
+          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-8 leading-tight text-shadow-md">
             Empoderar Mulheres,
             <br />
             <span className="text-aefem-pink">Transformar Vidas</span>
           </h1>
           
-          <p className="text-lg md:text-xl mb-12 max-w-3xl mx-auto leading-relaxed text-shadow font-light opacity-90">
+          <p className="text-base md:text-lg mb-12 max-w-3xl mx-auto leading-relaxed text-shadow font-light opacity-90">
             Juntas construímos um futuro onde cada mulher moçambicana 
             tem acesso à educação, oportunidades e dignidade.
           </p>

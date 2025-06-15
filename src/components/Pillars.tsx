@@ -39,11 +39,11 @@ const Pillars = () => {
     <section className="py-20 bg-gradient-to-b from-gray-50 to-white">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-aefem-purple mb-6">
+          <h2 className="text-3xl md:text-4xl font-bold text-aefem-purple mb-6">
             Os Nossos Pilares e Visão
           </h2>
           <div className="w-24 h-1 gradient-aefem mx-auto mb-8"></div>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
             Os cinco pilares fundamentais que sustentam toda a nossa missão de 
             empoderamento feminino e transformação social.
           </p>
@@ -69,10 +69,10 @@ const Pillars = () => {
         </div>
 
         <div className="bg-gradient-to-r from-aefem-purple to-purple-600 text-white p-12 rounded-3xl text-center">
-          <h3 className="text-3xl font-bold mb-6">
+          <h3 className="text-2xl font-bold mb-6">
             A Nossa Visão para 2027
           </h3>
-          <p className="text-xl mb-8 opacity-90 max-w-3xl mx-auto">
+          <p className="text-lg mb-8 opacity-90 max-w-3xl mx-auto">
             Ser a organização de referência em Moçambique no empoderamento feminino, 
             tendo impactado positivamente mil mulheres e criado duzentos micronegócios sustentáveis.
           </p>

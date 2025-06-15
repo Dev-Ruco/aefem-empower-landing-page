@@ -32,10 +32,10 @@ const News = () => {
     <section id="noticias" className="py-20 bg-gray-50">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-aefem-purple mb-6">
+          <h2 className="text-3xl md:text-4xl font-bold text-aefem-purple mb-6">
             Últimas Notícias
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-lg text-gray-600 max-w-3xl mx-auto">
             Acompanhe as nossas actividades e o impacto que estamos a criar na comunidade
           </p>
         </div>
