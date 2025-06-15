@@ -10,7 +10,7 @@ const Hero = () => {
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-black">
       {/* Background with opacity */}
       <div 
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-50"
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-40"
         style={{
           backgroundImage: "url('/lovable-uploads/2639acf1-b534-470a-a7b0-bbf8cd0f5c8f.png')"
         }}
@@ -43,7 +43,7 @@ const Hero = () => {
             <Button 
               variant="outline" 
               size="lg"
-              className="border-2 border-white text-white hover:bg-white hover:text-aefem-purple text-lg px-10 py-6 rounded-full font-bold shadow-2xl transform hover:scale-105 transition-all duration-300 backdrop-blur-sm min-w-[200px]"
+              className="border-2 border-white text-white bg-white/20 hover:bg-white hover:text-aefem-purple text-lg px-10 py-6 rounded-full font-bold shadow-2xl transform hover:scale-105 transition-all duration-300 backdrop-blur-sm min-w-[200px]"
             >
               Saber Mais
             </Button>
