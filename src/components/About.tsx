@@ -1,4 +1,5 @@
-import { Users, Heart, Target, Lightbulb, Scale, Shield, MessageCircle, Network, HandHeart, ArrowRight } from "lucide-react";
+
+import { Users, Heart, Target, Lightbulb, Scale, Shield, MessageCircle, Network, HandHeart, ArrowRight, GraduationCap, Megaphone, UserCheck } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 
@@ -92,7 +93,7 @@ const About = () => {
               <div className="mb-6">
                 <div className="flex items-center">
                   <div className="w-12 h-12 bg-gradient-to-br from-aefem-pink to-aefem-purple rounded-xl flex items-center justify-center mr-4">
-                    <Users className="w-6 h-6 text-white" />
+                    <GraduationCap className="w-6 h-6 text-white" />
                   </div>
                   <h4 className="text-lg font-bold text-aefem-purple">Capacitação e Liderança Feminina</h4>
                 </div>
@@ -122,7 +123,7 @@ const About = () => {
               <div className="mb-6">
                 <div className="flex items-center">
                   <div className="w-12 h-12 bg-gradient-to-br from-aefem-pink to-aefem-purple rounded-xl flex items-center justify-center mr-4">
-                    <MessageCircle className="w-6 h-6 text-white" />
+                    <Megaphone className="w-6 h-6 text-white" />
                   </div>
                   <h4 className="text-lg font-bold text-aefem-purple">Sensibilização e Mobilização Social</h4>
                 </div>
